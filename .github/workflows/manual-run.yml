@@ -142,19 +142,19 @@ jobs:
           path: github-pages/${{ github.event.inputs.environment }}/playwright-report
         continue-on-error: true
 
-      # - name: 📥 Download HTML Report
-      #   uses: actions/download-artifact@v4
-      #   with:
-      #     name: playwright-html-report-${{ github.event.inputs.environment }}
-      #     path: github-pages/${{ github.event.inputs.environment }}/playwright-html-report
-      #   continue-on-error: true
+      - name: 📥 Download HTML Report
+        uses: actions/download-artifact@v4
+        with:
+          name: playwright-html-report-${{ github.event.inputs.environment }}
+          path: github-pages/${{ github.event.inputs.environment }}/playwright-html-report
+        continue-on-error: true
 
-      # - name: 📥 Download Allure Results
-      #   uses: actions/download-artifact@v4
-      #   with:
-      #     name: allure-results-${{ github.event.inputs.environment }}
-      #     path: allure-results/${{ github.event.inputs.environment }}
-      #   continue-on-error: true
+      - name: 📥 Download Allure Results
+        uses: actions/download-artifact@v4
+        with:
+          name: allure-results-${{ github.event.inputs.environment }}
+          path: allure-results/${{ github.event.inputs.environment }}
+        continue-on-error: true
 
       # ========== Generate Allure Report ==========
       - name: 📦 Setup Java (for Allure)
