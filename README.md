@@ -1,12 +1,12 @@
-# PWFWDemo Automation Reports
+# SampleGitHubActionsWorkFlow Automation Reports
 
-Welcome to the **SampleGitHubActionsWorkflow** automation project. Below you can find the latest test results and HTML reports.
+Welcome to the **SampleGitHubActionsWorkFlow** automation project. Below you can find the latest test results and HTML reports.
 
 ---
 
 ## Workflow Status
 
-[![Playwright Tests](https://github.com/anupamaramu/SampleGitHubActionsWorkflow/actions/workflows/playwright.yml/badge.svg)](https://github.com/anupamaramu/SampleGitHubActionsWorkflow/actions/workflows/playwright.yml)
+[![Playwright Tests](https://github.com/anupamaramu/SampleGitHubActionsWorkFlow/actions/workflows/playwright.yml/badge.svg)](https://github.com/anupamaramu/SampleGitHubActionsWorkFlow/actions/workflows/playwright.yml)
 
 ---
 
