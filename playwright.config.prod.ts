@@ -1,8 +1,6 @@
 import { defineConfig, devices } from '@playwright/test';
 
 
-
-
 export default defineConfig({
   testDir: './tests',
   /* Run tests in files in parallel */
@@ -28,22 +26,17 @@ export default defineConfig({
       embedAttachments: true,
       outputFolder: 'playwright-html-report',
       minifyAssets: true,
-      startServer: true,
+      startServer: false,
     }]
   ],
   
   use: {
     
     trace: 'on-first-retry',
-    headless: true,
-    screenshot: 'on-first-failure',
+    headless: !!process.env.CI,  // false locally, true in CI
+    screenshot: 'on',
     video: 'on',
     baseURL: 'https://naveenautomationlabs.com/opencart/index.php',
-
-    httpCredentials: {
-      username: 'admin',
-      password: 'admin'
-    }
     
   },
 
