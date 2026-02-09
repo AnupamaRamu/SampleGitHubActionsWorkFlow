@@ -147,5 +147,5 @@ jobs:
         run: |
           echo "Reports Published!"
           echo "Playwright Built-in: https://anupamaramu.github.io/SampleGitHubActionsWorkFlow/playwright-report/index.html"
-        #  echo "Playwright HTML Reporter: https://anupamaramu.github.io/SampleGitHubActionsWorkFlow/playwright-html-report/index.html"
-        #  echo "Allure: https://anupamaramu.github.io/SampleGitHubActionsWorkFlow/allure-report/index.html"
+          echo "Playwright HTML Reporter: https://anupamaramu.github.io/SampleGitHubActionsWorkFlow/playwright-html-report/index.html"
+          echo "Allure: https://anupamaramu.github.io/SampleGitHubActionsWorkFlow/allure-report/index.html"
